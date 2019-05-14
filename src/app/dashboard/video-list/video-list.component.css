@@ -1,4 +1,7 @@
 .card {
-  color: white;
   height: 150px
+}
+
+.teal:not(.lighten-4) {
+  color: white;
 }

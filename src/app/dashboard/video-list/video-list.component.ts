@@ -7,7 +7,8 @@ import { Video } from '../../app-types';
   styleUrls: ['./video-list.component.css']
 })
 export class VideoListComponent implements OnInit {
-
+  selectedId: string;
+  
   videos: Video[] = [
   {
     "title": "Angular Observable Data Flow",
@@ -199,5 +200,4 @@ export class VideoListComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
