@@ -8,6 +8,8 @@ import { Video } from '../../app-types';
 })
 export class VideoDashboardComponent implements OnInit {
 
+  selectedVideo: Video;
+
   videoList: Video[] = [
     {
       "title": "Angular Observable Data Flow",
@@ -201,4 +203,7 @@ export class VideoDashboardComponent implements OnInit {
   ngOnInit() {
   }
 
+  selectVideo(video: Video) {
+    this.selectedVideo = video;
+  }
 }
